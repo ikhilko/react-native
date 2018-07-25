@@ -231,7 +231,7 @@ public class ARTShapeShadowNode extends ARTVirtualNode {
               int r = (int) (255 * mBrushData[5 + 4*i + 0]);
               int g = (int) (255 * mBrushData[5 + 4*i + 1]);
               int b = (int) (255 * mBrushData[5 + 4*i + 2]);
-              int a = (int) (255 * mBrushData[5 + 4*i + 3]);
+              int a = (int) (255 * mBrushData[5 + 4*i + 3] * opacity);
               colors[i] = Color.argb(a, r, g, b);
             }
           }
